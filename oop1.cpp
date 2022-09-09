@@ -8,6 +8,7 @@ using std::cout;
 using std::string;
 using std::endl;
 
+// abstract class used to enforce emplementation by using virtual method.
 class AbstractEmployee {
     virtual void AskForPromotion() = 0;
 };
@@ -20,6 +21,8 @@ protected:
     int Age;
 
 public:
+
+    // getter and setter methods
     void setName(string name) {
         Name = name;
     }
@@ -70,6 +73,7 @@ public:
     }
 };
 
+// inheritance
 class Developer: public Employee {
 public:
     string ProgrammingLanguage;
@@ -99,6 +103,7 @@ public:
     }
 };
 
+// inheritance
 class Teacher : public Employee {
 public:
     string Subject;
